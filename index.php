@@ -6,11 +6,24 @@
     <body>
 
         <form method="POST" action="#">
-            Первый аргумент<input type='text' name="first"/><br>
-            Операция<input type='text' name="operation"/><br>
-            Второй аргумент<input type='text' name="second"/><br>
-            <input type='submit' value='ок'/><br>
-
+            <table border = "0">
+                <tr>
+                    <td>Первый аргумент</td>
+                    <td><input type='text' name="first"/><br></td>
+                </tr>    
+                <tr>
+                    <td>Операция</td>
+                    <td><input type='text' name="operation"/><br></td>
+                </tr>
+                <tr>
+                    <td>Второй аргумент</td>
+                    <td><input type='text' name="second"/><br></td>
+                </tr>
+                <tr>
+                    <td align = 'right'><input type='submit' value='ок'/><br></td>
+                </tr>
+               
+            </table>
 
         </form>
 
