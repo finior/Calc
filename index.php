@@ -32,13 +32,20 @@
 
 <?php
 if (empty ($_POST['operation'])){
-    $result = 'Введите операцию';
+   $errop = 'Введите операцию';
+   
+   
+   
 }
-elseif (empty ($_POST['first'])){
-    $result = 'Введите первое значение';
+if (empty ($_POST['first'])){
+   $errfirst = 'Введите первое значение';
+  
+   
 }
-elseif (empty ($_POST['second'])){
-    $result = 'Введите второе значение';
+if (empty ($_POST['second'])){
+    $errsecond = 'Введите второе значение';
+    
+   
 }
 else {
 switch ($_POST['operation'])
@@ -55,6 +62,9 @@ default : $result = 'Введите верную операцию';
 break;
 }
 }
+echo $errop. "<br>";
+echo $errfirst. "<br>";
+echo $errsecond. "<br>";
 echo $result;
 ?>
 
